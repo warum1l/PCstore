@@ -52,6 +52,65 @@
                 </div>
             </div>
         </section>
+                <section class="reviews">
+            <div class="container">
+                <h2>Відгуки про товар</h2>
+                
+                <div class="reviews-list">
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="review-author">Іван Петренко</div>
+                            <div class="review-rating">★★★★★</div>
+                            <div class="review-date">12.05.2024</div>
+                        </div>
+                        <div class="review-text">
+                            <p>Відмінна відеокарта! Працює бездоганно, всі ігри на максимальних налаштуваннях. 
+                            Дуже задоволений покупкою.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="review">
+                        <div class="review-header">
+                            <div class="review-author">Олександра Коваль</div>
+                            <div class="review-rating">★★★★☆</div>
+                            <div class="review-date">05.05.2024</div>
+                        </div>
+                        <div class="review-text">
+                            <p>Потужна карта, але дуже велика і споживає багато енергії. 
+                            Потрібен хороший блок живлення.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="add-review">
+                    <h3>Залишити відгук</h3>
+                    <form id="review-form">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Оцінка:</label>
+                            <div class="rating">
+                                <span class="star" data-value="5">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="1">★</span>
+                                <input type="hidden" id="rating" name="rating" value="0">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-text">Ваш відгук:</label>
+                            <textarea id="review-text" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Надіслати відгук</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer" id="about">
   <div class="container">
@@ -83,5 +142,6 @@
     </div>
   </div>
 </footer>
+<script src="js/reviews.js"></script>
 </body>
 </html>

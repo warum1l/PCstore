@@ -256,3 +256,140 @@ ul {
         padding: 10px 20px;
     }
 }
+
+.reviews {
+    padding: 60px 0;
+    background-color: #f5f7fa;
+    margin-top: 40px;
+}
+
+.reviews h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #0056b3;
+    text-align: center;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.review {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.review-author {
+    font-weight: 600;
+    color: #0056b3;
+}
+
+.review-rating {
+    color: #ffc107;
+    font-size: 18px;
+}
+
+.review-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.review-text {
+    line-height: 1.6;
+}
+
+.add-review {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.add-review h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.rating {
+    display: flex;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.star {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: #ffc107;
+}
+
+.star.active {
+    color: #ffc107;
+}
+
+@media (max-width: 768px) {
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .add-review {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews {
+        padding: 40px 0;
+    }
+    
+    .reviews h2 {
+        font-size: 24px;
+    }
+}
