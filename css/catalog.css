@@ -78,17 +78,25 @@ ul {
 }
 
 .cart-btn {
-    padding: 8px 16px;
-    background-color: #0056b3;
-    color: white;
+    background: none;
     border: none;
-    border-radius: 5px;
+    font-size: 28px; 
     cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 5px 10px;
+    position: relative;
+    color: inherit; 
+    transition: transform 0.3s;
 }
 
 .cart-btn:hover {
-    background-color: #003d7a;
+    transform: scale(1.1);
+}
+body.dark-theme .cart-btn {
+    color: #f0f0f0;
+}
+
+body.dark-theme .cart-count {
+    background-color: #ff6b81;
 }
 
 
