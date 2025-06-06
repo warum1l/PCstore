@@ -11,7 +11,7 @@ body {
 
 body.dark-theme {
     background-color: #1a1a1a;
-    color: #f0f0f0;
+    color: #ffffff; 
 }
 
 body.dark-theme .header,
@@ -20,6 +20,7 @@ body.dark-theme .review,
 body.dark-theme .add-review {
     background-color: #2d2d2d;
     border-color: #444;
+    color: #ffffff; 
 }
 
 body.dark-theme .header {
@@ -50,7 +51,7 @@ body.dark-theme .header {
     justify-content: space-between;
     width: 60px;
     height: 30px;
-    background: var(--toggle-bg, #e0e0e0);
+    background: #e0e0e0;
     border-radius: 50px;
     padding: 5px;
     position: relative;
@@ -70,7 +71,7 @@ body.dark-theme .header {
     left: 3px;
     width: 24px;
     height: 24px;
-    background: var(--toggle-ball, #ffffff);
+    background: #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
@@ -78,11 +79,11 @@ body.dark-theme .header {
 
 
 body.dark-theme .theme-label {
-    --toggle-bg: #424242;
+    background: #424242;
 }
 
 body.dark-theme .theme-ball {
-    --toggle-ball: #212121;
+    background: #212121;
     transform: translateX(30px);
 }
 
@@ -107,4 +108,96 @@ body:not(.dark-theme) .moon {
     body.dark-theme .theme-ball {
         transform: translateX(24px);
     }
+}
+
+
+body.dark-theme a,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme p,
+body.dark-theme li {
+    color: #ffffff; 
+}
+
+body.dark-theme .btn {
+    color: #ffffff; 
+}
+
+body.dark-theme .footer {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .footer a {
+    color: #bbbbbb;
+}
+
+body.dark-theme .footer a:hover {
+    color: #ffffff;
+}
+.product-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.description {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.description h3 {
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.description ul {
+    padding-left: 20px;
+}
+
+.description li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+
+body.dark-theme .product-info {
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+body.dark-theme .description {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+body.dark-theme .description h3 {
+    color: #64b5f6;
+}
+
+body.dark-theme .description li {
+    color: #e0e0e0;
+}
+
+
+body.dark-theme .product-gallery {
+    background-color: #2d2d2d;
+}
+
+body.dark-theme .stock {
+    color: #4caf50;
+}
+
+body.dark-theme .reviews {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .review {
+    background-color: #2d2d2d;
+    border-color: #444;
 }

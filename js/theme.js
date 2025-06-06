@@ -4,18 +4,36 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     if (savedTheme === 'dark') {
-        document.body.classList.add('dark-theme');
+        enableDarkTheme();
         themeCheckbox.checked = true;
     }
     
     
     themeCheckbox.addEventListener('change', function() {
         if (this.checked) {
-            document.body.classList.add('dark-theme');
+            enableDarkTheme();
             localStorage.setItem('theme', 'dark');
         } else {
-            document.body.classList.remove('dark-theme');
+            disableDarkTheme();
             localStorage.setItem('theme', 'light');
         }
     });
+    
+    function enableDarkTheme() {
+        document.body.classList.add('dark-theme');
+        
+        
+        document.querySelectorAll('.product-card, .review, .add-review').forEach(el => {
+            el.classList.add('dark-theme');
+        });
+    }
+    
+    function disableDarkTheme() {
+        document.body.classList.remove('dark-theme');
+        
+        
+        document.querySelectorAll('.product-card, .review, .add-review').forEach(el => {
+            el.classList.remove('dark-theme');
+        });
+    }
 });
