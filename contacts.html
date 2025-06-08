@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - TechZone</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">TechZone</a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div class="theme-switcher">
+                    <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
+                    <label for="theme-checkbox" class="theme-label" title="Перемкнути тему">
+                        <span class="theme-icon sun">☀️</span>
+                        <span class="theme-icon moon">🌙</span>
+                        <span class="theme-ball"></span>
+                    </label>
+                </div>
+                <button class="cart-btn" title="Кошик">🛒</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="contacts">
+            <div class="container">
+                <h1>Наші контакти</h1>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Адреса</h3>
+                        <p>м. Kassel, Mattenberg, 34132</p>
+                        <p>ТРЦ "CityPoint", 3 поверх</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Телефони</h3>
+                        <p>+380 (44) 123-45-67</p>
+                        <p>+380 (99) 765-43-21</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@techzone.de</p>
+                        <p>support@techzone.de</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            
+                        </div>
+                        <h3>Графік роботи</h3>
+                        <p>Пн-Пт: 09:00 - 20:00</p>
+                        <p>Сб-Нд: 10:00 - 18:00</p>
+                    </div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <h2>Написати нам</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Ваше ім'я</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Повідомлення</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Надіслати</button>
+                        </form>
+                    </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="about">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechZone</h4>
+        <p>Ваш надійний партнер у світі технологій</p>
+      </div>
+      <div class="footer-section">
+        <h4>Інформація</h4>
+        <ul>
+          <li><a href="#">Про компанію</a></li>
+          <li><a href="#">Доставка та оплата</a></li>
+          <li><a href="warranty.html">Гарантія</a></li>
+          <li><a href="#">Повернення товару</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" id="contact">
+        <h4>Контакти</h4>
+        <ul>
+          <li>📞 +380 (44) 123-45-67</li>
+          <li>📧 info@techzone.de</li>
+          <li>📍 Kassel. 34132. Mattenberg</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 TechZone. Всі права захищені.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>
