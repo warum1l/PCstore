@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVIDIA RTX 4090 – TechZone</title>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">TechZone</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
+                <label for="theme-checkbox" class="theme-label" title="Перемкнути тему">
+                    <span class="theme-icon sun">☀️</span>
+                    <span class="theme-icon moon">🌙</span>
+                    <span class="theme-ball"></span>
+                </label>
+            </div>
+            <button class="cart-btn" title="Кошик">🛒</span></button>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+        <section class="product">
+            <div class="container">
+                
+                <div class="product-gallery">
+                    <img src="images/pguujpg.jpg" alt="AMD RX 7900 XTX">
+                </div>
+
+                <div class="product-info">
+                    <h1>AMD RX 7900 XTX</h1>
+                    <p class="price">42 499 ₴</p>
+                    <p class="stock">В наявності</p>
+                    <button class="btn">Купити</button> 
+
+                    <div class="description">
+                        <h3>Характеристики:</h3>
+                        <ul>
+                            <li>24 ГБ GDDR6X</li>
+                            <li>Ядро: 2735 МГц</li>
+                            <li>Роз'єми: 3x DisplayPort, 1x HDMI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <section class="reviews">
+            <div class="container">
+                <h2>Відгуки про товар</h2>
+                
+                <div class="reviews-list">
+                    <div class="review">
+                        <div class="review-header">
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="add-review">
+                    <h3>Залишити відгук</h3>
+                    <form id="review-form">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Оцінка:</label>
+                            <div class="rating">
+                                <span class="star" data-value="5">★</span>
+                                <span class="star" data-value="4">★</span>
+                                <span class="star" data-value="3">★</span>
+                                <span class="star" data-value="2">★</span>
+                                <span class="star" data-value="1">★</span>
+                                <input type="hidden" id="rating" name="rating" value="0">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-text">Ваш відгук:</label>
+                            <textarea id="review-text" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Надіслати відгук</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="about">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechZone</h4>
+        <p>Ваш надійний партнер у світі технологій</p>
+      </div>
+      <div class="footer-section">
+        <h4>Інформація</h4>
+        <ul>
+          <li><a href="about.html">Про компанію</a></li>
+          <li><a href="#">Доставка та оплата</a></li>
+          <li><a href="warranty.html">Гарантія</a></li>
+          <li><a href="#">Повернення товару</a></li>
+        </ul>
+      </div>
+      <div class="footer-section" id="contact">
+        <h4>Контакти</h4>
+        <ul>
+          <li>📞 +380 (44) 123-45-67</li>
+          <li>📧 info@techzone.de</li>
+          <li>📍 Kassel. 34132. Mattenberg</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 TechZone. Всі права захищені.</p>
+    </div>
+  </div>
+</footer>
+<script src="js/reviews.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
