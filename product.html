@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="index.html">Головна</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
         <div class="header-controls">
@@ -30,7 +30,7 @@
                     <span class="theme-ball"></span>
                 </label>
             </div>
-            <button class="cart-btn" title="Кошик">🛒</span></button>
+            <a href="cart.html" class="cart-btn" title="Кошик">🛒</a>
         </div>
     </div>
 </header>
@@ -47,7 +47,7 @@
                     <h1>NVIDIA GeForce RTX 4090</h1>
                     <p class="price">52 999 ₴</p>
                     <p class="stock">В наявності</p>
-                    <button class="btn">Купити</button> 
+                    <button class="btn" data-cart>Купити</button>
 
                     <div class="description">
                         <h3>Характеристики:</h3>
@@ -150,6 +150,8 @@
     </div>
   </div>
 </footer>
+<script src="js/cart.js"></script>
+<script src="js/gotocart.js"></script>
 <script src="js/reviews.js"></script>
 <script src="js/theme.js"></script>
 </body>
