@@ -164,6 +164,22 @@ ul {
     margin-bottom: 25px;
     color: #0056b3;
 }
+.contact-map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--text-color);
+}
 
 .form-group {
     margin-bottom: 20px;
