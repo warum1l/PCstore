@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гарантія - TechZone</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/warranty.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">TechZone</a>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Головна</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="contacts.html">Контакти</a></li>
-                </ul>
-            </nav>
-            <div class="header-controls">
-                <div class="theme-switcher">
-                    <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
-                    <label for="theme-checkbox" class="theme-label" title="Перемкнути тему">
-                        <span class="theme-icon sun">☀️</span>
-                        <span class="theme-icon moon">🌙</span>
-                        <span class="theme-ball"></span>
-                    </label>
-                </div>
-                <a href="cart.html" class="cart-btn" title="Кошик">🛒</a>
-            </div>
+    <div class="container navbar">
+        <div class="logo">
+            <a href="index.html">TechZone</a>
         </div>
-    </header>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
+                <label for="theme-checkbox" class="theme-label" title="Перемкнути тему">
+                    <span class="theme-icon sun">☀️</span>
+                    <span class="theme-icon moon">🌙</span>
+                    <span class="theme-ball"></span>
+                </label>
+            </div>
+            <a href="cart.html" class="cart-btn" title="Кошик">🛒</a>
+        </div>
+    </div>
+</header>
 
     <main class="main">
         <section class="warranty">

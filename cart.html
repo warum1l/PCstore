@@ -11,29 +11,31 @@
 </head>
 <body>
 <header class="header">
-  <div class="container">
-    <div class="logo">
-      <a href="index.html">TechZone</a>
+    <div class="container navbar">
+        <div class="logo">
+            <a href="index.html">TechZone</a>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-right">
+            <div class="theme-switcher">
+                <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
+                <label for="theme-checkbox" class="theme-label" title="Перемкнути тему">
+                    <span class="theme-icon sun">☀️</span>
+                    <span class="theme-icon moon">🌙</span>
+                    <span class="theme-ball"></span>
+                </label>
+            </div>
+            <a href="cart.html" class="cart-btn" title="Кошик">🛒</a>
+        </div>
     </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">Головна</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="contacts.html">Контакти</a></li>
-      </ul>
-    </nav>
-    <div class="header-controls">
-      <div class="theme-switcher">
-        <input type="checkbox" id="theme-checkbox" class="theme-checkbox" />
-        <label for="theme-checkbox" class="theme-label" title="Перемкнути тему">
-          <span class="theme-icon sun">☀️</span>
-          <span class="theme-icon moon">🌙</span>
-          <span class="theme-ball"></span>
-        </label>
-      </div>
-      <a href="cart.html" class="cart-btn" title="Кошик">🛒</a>
-    </div>
-  </div>
 </header>
 
 <main class="main">
@@ -46,7 +48,6 @@
       <div id="cart-summary">
         <p id="total-price">Загальна сума: 0 ₴</p>
         <button id="checkout-btn" class="checkout-btn">Оформити замовлення</button>
-        <button id="clear-cart" class="btn">Очистити кошик</button>
       </div>
     </section>
   </main>
