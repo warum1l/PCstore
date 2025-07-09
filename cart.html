@@ -40,16 +40,17 @@
 
 <main class="main">
     <section class="container">
-      <h1>Ваш кошик</h1>
-      <div id="cart-items">
-        
-      </div>
+  <h1>Ваш кошик</h1>
 
-      <div id="cart-summary">
-        <p id="total-price">Загальна сума: 0 ₴</p>
-        <button id="checkout-btn" class="checkout-btn">Оформити замовлення</button>
-      </div>
-    </section>
+  <div id="cart-wrapper">
+    <div id="cart-items"></div>
+
+    <div id="cart-summary">
+      <p id="total-price">Загальна сума: 0 ₴</p>
+      <button id="checkout-btn" class="checkout-btn">Оформити замовлення</button>
+    </div>
+  </div>
+</section>
   </main>
 
 <footer class="footer" id="about">
@@ -82,6 +83,42 @@
     </div>
   </div>
 </footer>
+
+<div id="payment-modal" class="payment-modal hidden">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <h2>Оформлення замовлення</h2>
+
+    <label>
+      Спосіб оплати
+      <select id="payment-method">
+        <option value="card">Банківська картка</option>
+        <option value="paypal">PayPal</option>
+        <option value="cash">Готівка при отриманні</option>
+      </select>
+    </label>
+
+    <label>
+      Спосіб доставки
+      <select id="delivery-method">
+        <option value="dhl">DHL</option>
+        <option value="dp">Deutsche Post</option>
+        <option value="pickup">Самовивіз</option>
+      </select>
+    </label>
+
+    <label>
+      Адреса доставки
+      <input type="text" id="delivery-address" placeholder="Наприклад: Kassel, вул. FakeStreet 42">
+    </label>
+
+    <div class="modal-buttons">
+      <button class="btn" id="confirm-payment">Підтвердити</button>
+      <button class="btn btn-outline" id="cancel-payment">Скасувати</button>
+    </div>
+  </div>
+</div>
+
 <script src="js/gotocart.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/theme.js"></script>

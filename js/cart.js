@@ -3,6 +3,10 @@ let totalPriceElement = document.getElementById("total-price");
 let clearCartBtn = document.getElementById("clear-cart");
 let checkoutBtn = document.getElementById("checkout-btn");
 
+let modal = document.getElementById("payment-modal");
+let confirmBtn = document.getElementById("confirm-payment");
+let cancelBtn = document.getElementById("cancel-payment");
+
 function getCart() {
   return JSON.parse(localStorage.getItem("cart")) || [];
 }
@@ -31,7 +35,7 @@ function renderCartItem(item, index) {
 
 function updateCart() {
   let cart = getCart();
-  
+
   if (cart.length === 0) {
     cartContainer.innerHTML = '<p class="empty-cart-message">Кошик порожній.</p>';
     totalPriceElement.textContent = "Загальна сума: 0 ₴";
@@ -59,20 +63,28 @@ function clearCart() {
 
 function checkout() {
   let cart = getCart();
-  
   if (cart.length === 0) {
-    alert('Кошик порожній! Додайте товари перед оформленням.');
+    alert("Кошик порожній! Додайте товари перед оформленням.");
     return;
   }
-  
-  let total = calculateTotal(cart);
-  
-  if (confirm(`Оформити замовлення на суму ${total} ₴?`)) {
-    alert('Замовлення оформлено! Дякуємо!');
-    clearCart();
-  }
+  modal.classList.remove("hidden");
 }
 
+cancelBtn?.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+confirmBtn?.addEventListener("click", () => {
+  let address = document.getElementById("delivery-address").value.trim();
+  if (!address) {
+    alert("Введіть адресу доставки!");
+    return;
+  }
+
+  alert("Оплата пройшла успішно. Дякуємо за замовлення!");
+  modal.classList.add("hidden");
+  clearCart();
+});
 
 clearCartBtn?.addEventListener("click", clearCart);
 checkoutBtn?.addEventListener("click", checkout);
