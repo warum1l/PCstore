@@ -547,3 +547,81 @@ body.dark-theme .newsletter-form input {
     width: 100%;
   }
 }
+.promo-popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px 24px;
+  width: 300px;
+  z-index: 10000;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: translateY(100px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.promo-popup.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.promo-popup h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.promo-popup p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.promo-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #0056b3;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.promo-btn:hover {
+  background: #003d7a;
+}
+
+.close-promo {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+body.dark-theme .promo-popup {
+  background: #2d2d2d;
+  color: #e0e0e0;
+}
+
+body.dark-theme .promo-popup p {
+  color: #bbb;
+}
+
+body.dark-theme .promo-btn {
+  background: #aad4ff;
+  color: #121212;
+}
+
+body.dark-theme .promo-btn:hover {
+  background: #7fbfff;
+}
