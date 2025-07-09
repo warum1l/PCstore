@@ -625,3 +625,42 @@ body.dark-theme .promo-btn {
 body.dark-theme .promo-btn:hover {
   background: #7fbfff;
 }
+
+.partners {
+  padding: 60px 0;
+  background: #f9f9f9;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+body.dark-theme .partners {
+  background: #1f1f1f;
+}
+
+.partners h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #0056b3;
+}
+
+body.dark-theme .partners h2 {
+  color: #aad4ff;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.partner-logos img {
+  height: 50px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.partner-logos img:hover {
+  filter: none;
+}
