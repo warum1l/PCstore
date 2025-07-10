@@ -324,3 +324,25 @@ body.dark-theme .btn.btn-outline:hover {
     flex-direction: column;
   }
 }
+
+#cart-summary {
+  align-items: center;
+  text-align: center;
+}
+
+#total-price {
+  margin-bottom: 10px;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.cart-buttons .btn,
+.cart-buttons .checkout-btn {
+  min-width: 180px;
+  text-align: center;
+}
