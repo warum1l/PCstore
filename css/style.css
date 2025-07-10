@@ -59,20 +59,27 @@ ul {
 
 .logo {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
-    font-size: 32px;
-    font-weight: 800;
-    color: #0056b3;
-    transition: all 0.3s ease;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    letter-spacing: -0.5px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #0047ab;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    letter-spacing: -0.8px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .logo a:hover {
-    opacity: 0.8;
+    color: #003580;
+    transform: scale(1.05);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 .nav {
     flex-grow: 1;
@@ -118,17 +125,21 @@ ul {
 }
 
 .cart-btn {
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-    padding: 5px 10px;
-    color: inherit;
-    transition: transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  color: #0056b3;
+  font-size: 22px;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .cart-btn:hover {
-    transform: scale(1.1);
+  background: rgba(0, 86, 179, 0.08);
+  color: #003d7a;
+  transform: scale(1.1);
 }
 
 .theme-toggle {
@@ -663,4 +674,97 @@ body.dark-theme .partners h2 {
 
 .partner-logos img:hover {
   filter: none;
+}
+.product-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+    z-index: 2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    animation: pulse 2s infinite;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+}
+
+.product-card:nth-child(1) .product-badge {
+    background: linear-gradient(135deg, #ff7675, #d63031);
+}
+
+.product-card:nth-child(2) .product-badge {
+    background: linear-gradient(135deg, #00b894, #55efc4);
+    animation: pulse 2s infinite, neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+.product-card:nth-child(3) .product-badge {
+    background: linear-gradient(135deg, #fdcb6e, #e17055);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes neonGlow {
+    from {
+        box-shadow: 0 0 5px rgba(0, 184, 148, 0.5), 
+                    0 0 10px rgba(0, 184, 148, 0.3);
+    }
+    to {
+        box-shadow: 0 0 10px rgba(0, 184, 148, 0.8), 
+                    0 0 20px rgba(0, 184, 148, 0.5),
+                    0 0 30px rgba(0, 184, 148, 0.2);
+    }
+}
+
+body.dark-theme .product-badge {
+    color: #fff;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .product-card:nth-child(1) .product-badge {
+    background: linear-gradient(135deg, #e84393, #fd79a8);
+}
+
+body.dark-theme .product-card:nth-child(2) .product-badge {
+    background: linear-gradient(135deg, #00cec9, #81ecec);
+}
+
+body.dark-theme .product-card:nth-child(3) .product-badge {
+    background: linear-gradient(135deg, #f39c12, #f1c40f);
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin: 8px 0 12px;
+}
+
+.product-rating .stars {
+    letter-spacing: 3px;
+    color: #ffb400;
+    position: relative;
+}
+
+.product-rating .stars::after {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ddd;
+    z-index: -1;
+}
+
+.product-rating span {
+    font-size: 13px;
+    color: #666;
+    margin-left: 5px;
 }

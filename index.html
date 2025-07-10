@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/theme.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -32,7 +34,9 @@
                     <span class="theme-ball"></span>
                 </label>
             </div>
-            <a href="cart.html" class="cart-btn" title="Кошик">🛒</a>
+            <a href="cart.html" class="cart-btn" title="Кошик">
+            <i class="fas fa-shopping-cart"></i> 
+            </a>
         </div>
     </div>
 </header>
@@ -46,25 +50,45 @@
         </section>
         <section class="featured">
             <div class="container">
-                <h2>Рекомендовані товари</h2>
+                <h2 class="section-title">Рекомендовані товари</h2>
                 <div class="products-grid">
                     <div class="product-card">
-                        <img src="images/gpu2.jpg" alt="RTX 4090">
+                        <div class="product-badge">Топ продаж</div>
+                        <div class="product-image">
+                            <img src="images/msi4090.png" alt="RTX 4090" loading="lazy">
+                        </div>
                         <h3>NVIDIA RTX 4090</h3>
+                        <div class="product-rating">
+                            ★★★★★ <span>(2477)</span>
+                        </div>
                         <p class="price">52 999 ₴</p>
-                        <a href="product.html" class="btn">Детальніше</a>
+                        <a href="product.html" class="btn product-btn">Детальніше</a>
                     </div>
+                    
                     <div class="product-card">
-                        <img src="images/cpu1.jpg" alt="Ryzen 9">
-                        <h3>AMD Ryzen 9 7950X</h3>
+                        <div class="product-badge">Новинка</div>
+                        <div class="product-image">
+                            <img src="images/amd_ryzen_9_7950x_a.png" alt="Ryzen 9" loading="lazy">
+                        </div>
+                        <h3>AMD Ryzen 9 7950X3D</h3>
+                        <div class="product-rating">
+                            ★★★★☆ <span>(1821)</span>
+                        </div>
                         <p class="price">24 499 ₴</p>
-                        <a href="product2.html" class="btn">Детальніше</a>
+                        <a href="product2.html" class="btn product-btn">Детальніше</a>
                     </div>
+                    
                     <div class="product-card">
-                        <img src="images/1024.png" alt="RTX 4070">
+                        <div class="product-badge">Вигідна ціна</div>
+                        <div class="product-image">
+                            <img src="images/1024.png" alt="RTX 4070" loading="lazy">
+                        </div>
                         <h3>NVIDIA RTX 4070TI</h3>
+                        <div class="product-rating">
+                            ★★★★★ <span>(3128)</span>
+                        </div>
                         <p class="price">32 799 ₴</p>
-                        <a href="product4.html" class="btn">Детальніше</a>
+                        <a href="product4.html" class="btn product-btn">Детальніше</a>
                     </div>
                 </div>
             </div>
