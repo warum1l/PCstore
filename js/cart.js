@@ -38,12 +38,12 @@ function updateCart() {
 
   if (cart.length === 0) {
     cartContainer.innerHTML = '<p class="empty-cart-message">Кошик порожній.</p>';
-    totalPriceElement.textContent = "Загальна сума: 0 ₴";
+    totalPriceElement.textContent = "Загальна сума: 0 €";
     return;
   }
 
   cartContainer.innerHTML = cart.map(renderCartItem).join('');
-  totalPriceElement.textContent = `Загальна сума: ${calculateTotal(cart).toLocaleString()} ₴`;
+  totalPriceElement.textContent = `Загальна сума: ${calculateTotal(cart).toLocaleString()} €`;
 
   document.querySelectorAll(".remove-btn").forEach(btn => {
     btn.addEventListener("click", (e) => {
